@@ -1,0 +1,39 @@
+<div id="fullpage">
+	<div class="section " id="section0">
+		<video id="myVideo" loop muted data-autoplay >
+			<source src="imgs/tasteofkorea.ogv" type="video/ogg">
+			<source src="imgs/tasteofkorea.mp4" type="video/mp4">
+			<source src="imgs/tasteofkorea.webm" type="video/webm">
+		</video>
+		<button id="unmuteButton"></button>
+		<!-- <button id="muteButton"></button> -->
+<script>
+// var bt = document.getElementById("unmuteButton");
+  // bt.addEventListener('click', function() {
+  	// var video = document.getElementById("myVideo");
+    // video.muted = false;  	
+//   
+  // });
+ var bt = document.getElementById("unmuteButton"); 
+ var num = 0;
+ 
+ bt.addEventListener('click', function() {
+	 var video = document.getElementById("myVideo");
+	 num++;
+	 if(num%2==1){
+	 	video.muted = false;
+	 	bt.style.width = "128px";
+	 	bt.style.height = "128px";
+	 	bt.style.backgroundImage = "url(imgs/unmute.png) 0 0"; 	
+	 }else if(num%2==0){
+	 	video.muted = true;
+	 	bt.style.width = "128px";
+	 	bt.style.height = "128px";
+	 	bt.style.backgroundImage = "url(imgs/mute.png) 0 0";
+ }
+  
+ }); 
+ 	
+  
+  
+</script>

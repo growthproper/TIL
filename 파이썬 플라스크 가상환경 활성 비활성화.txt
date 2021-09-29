@@ -1,0 +1,17 @@
+파이썬 플라스크 가상환경 설정
+
+프로젝트 폴더 안에서 cmd 실행하여 python -m venv [가상환경이름]
+
+가상환경 활성화
+가상환경이름\Scripts\activate.bat
+
+가상환경을 비활성화 >> deactivate 치면 됨
+
+가상환경 내에서 패키지 설치, 삭제
+
+pip install, pip uninstall
+
+가상환경 패키지 목록 >> pip freeze
+
+가상환경 설정후 코드 실행할려면 cmd창에서
+flask run 이라고 치면 됨

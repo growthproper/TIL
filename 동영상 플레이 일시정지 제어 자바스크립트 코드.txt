@@ -1,0 +1,18 @@
+동영상 플레이, 일시정지 제어 자바스크립트 코드
+
+<script>
+function pp() {
+    var bt = document.getElementById("player");
+    var video = document.getElementById("pr_video");
+    var img = document.getElementsByTagName("img");       
+    if(video.paused){       
+        video.play();    
+        bt.style.opacity = '0.3';
+        bt.style.transition = 'opacity .3s';              
+    }else {
+        video.pause();
+        bt.style.opacity = '1';
+        bt.style.transition = 'opacity .3s'; 
+    };
+};
+</script>

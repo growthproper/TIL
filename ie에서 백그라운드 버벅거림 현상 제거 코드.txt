@@ -1,0 +1,7 @@
+//ie에서 background-attatchment: fixed; 했을대 버벅거림 현상 제거 코드
+   	$('body').on("mousewheel", function() {
+      	event.preventDefault();
+      	var wheelDelta = event.wheelDelta;
+      	var currentScrollPosition = window.pageYOffset;
+      	window.scrollTo(0, currentScrollPosition - wheelDelta);
+      });

@@ -1,0 +1,15 @@
+리액트 새로운 폴더 만들고 실행할 때
+
+
+프로젝트 생성 명령 설치하기
+npm install -g create-react-app
+
+프로젝트 생성하기
+create-react-app [프로젝트 이름]
+
+프로젝트 폴더에 들어가기
+cd [프로젝트 이름]
+
+프로젝트 실행
+npm start 또는 yarn start
+
