@@ -83,14 +83,14 @@ var cube = new THREE.Mesh(cubeGeom, faceMaterial);
 var meshMaterial = new THREE.MeshLambertMaterial({color: 0x7777ff});
 ```
 
-+ <속성>
+<속성>
  + ambient :  물질의 주변색
  + emissive : 방출하는 색
  + wrapAround : true로 설정되어 있으면 half-lambert 조명 기술을 사용할 수 있다. 빛의 감소를 줄어들게 함.
  + wrapRGB : true로 설정되어 있으면 THREE.Vector3를 사용해 빛이 줄어드는 속도를 제어할 수 있다.
 
 ### THREE.MeshPhongMaterial
-+ <속성>
+<속성>
  + ambient : 물질의 주변색
  + emissive : 방출하는 색
  + specular : 물질이 어떻게 빛나고 어떤 색으로 빛나는지 정의
@@ -107,7 +107,7 @@ var meshMaterial = new THREE.MeshLambertMaterial({color: 0x7777ff});
 
 + 웹GL 컨텍스트에서 직접 동작하는 사용자 정의 셰이더를 만들 수 있음.
 
-+ <속성>
+<속성>
  + fragmentShader : 전달되는 각각의 픽셀의 색상을 정의. 프레그먼트 셰이더 프로그램의 문자열 값을 전달해야 함.
  + VertexShader : 전달되는 각 꼭지점의 위치를 변경할 수 있음. 자신의 꼭지점 셰이더 프로그램의 문자열 값을 전달해야 함.
  + uniforms : 셰이더에 정보를 보냄. 동일 정보가 각 꼭지점과 프레그먼트에 전송됨.
@@ -119,7 +119,7 @@ var meshMaterial = new THREE.MeshLambertMaterial({color: 0x7777ff});
 + fragmentShader : 지오메트리의 각 프레그먼트에서 동작. vertexShader에서 각각의 프레그먼트에서 보여질 색상을 반환.
 
 ### THREE.LineBasicMaterial
-+ <속성>
+<속성>
  + color
  + linewidth
  + linecap : 선의 끝 모양을 정의. 사용가능한 값은 butt, round, square. WebGLRenderer에서 지원 안됨
